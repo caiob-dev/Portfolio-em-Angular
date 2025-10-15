@@ -1,0 +1,34 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  transition: 0.5s;
+  cursor: pointer;
+
+  &.btn-cv,
+  &.btn-linkedin {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 7px;
+  }
+
+  &.btn-cv {
+    color: var(--black-1);
+    background: var(--btn-cv);
+   
+    &:hover {
+      background: var(--btn-cv-1);
+      color: var(--white);
+    }
+  }
+
+  &.btn-linkedin {
+    color: var(--white);
+     background: var(--btn-linkedin);
+   
+    &:hover {
+       background: var(--btn-linkedin-1);
+    }
+  }
+}
